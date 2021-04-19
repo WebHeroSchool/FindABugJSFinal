@@ -49,3 +49,28 @@ body{
   padding: 29px 83px 28px 82px;
 }
 
+.level_simple, .level_middle, .level_hard {
+  padding: 0px;
+  visibility: hidden;
+}
+
+.filed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* класс создан в JS для обратной стороны карты*/
+.card {
+  background: url('./img/cardBack.png');
+  width: 50px;
+  height: 70px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: transform 1s;
+  transform: translateY(-15px) rotate(-5deg);
+}
