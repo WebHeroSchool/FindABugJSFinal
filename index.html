@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Find a bug</title>
+</head>
+
+<body>
+
+    <div class='container'>
+
+        <header class="header" id="header">
+            <h1 class="header__title">Выберите уровень сложности:</h1>
+            <a class="header__subtitle">Выберите уровень сложности и игра начнется.Чем выше уровень - тем больше будет выборка карт</a>
+           </header>
+
+        <div class="choose-level"> 
+            <div class="level">
+                <input class="level_simple" value="3" id="easy" name="choice" type="radio" checked> 
+                <!-- checked зафиксировать начальное положение при загрузке
+                radio: Кнопка-переключатель, позволяет выбрать одно значение из множественного выбора-->   
+                <lable class="level_description" for="easy">Простой</lable>
+                   </div>
+            <div class="level">
+                    <input class="level_middle" value="6" id="middle" name="choice" type="radio"> 
+                    <lable class="level_description" for="middle">Средний</lable>
+             </div>
+                   <div class="level">
+                      <input class="level_hard" value="10" id="hard" name="choice" type="radio">
+                      <lable class="level_description" for="hard">Сложный</lable>
+                   </div>
+        </div>
+     
+           <div class='button'>
+              <button class="start-button" id="button">Начать игру</button>
+           </div> 
+
+    </div>
+    
+    <script src="./script.js"></script>  
+</body>
+
+ 
+</html>

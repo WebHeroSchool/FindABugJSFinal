@@ -1,0 +1,51 @@
+body{
+  background-image:  url(./img/cardMenu2.png), url(./img/cardMenu.png), url(./img/Background.png);
+  background-position:  79% 91%, 63% 87%, 100% 100%;
+  background-size: 24% 42%, 18% 40%, cover;
+  background-repeat: no-repeat ;
+  height: 100vh;
+}
+.container {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  height: 100vh;
+  font-weight: bold;
+}
+.header{
+  padding: 5% 0% 0% 6%;
+}
+
+.header__title {
+  font-size: 57px;
+  line-height: 67px;
+  margin-bottom: 9px;
+}
+
+.header__subtitle {
+  font-size: 19px;
+  line-height: 22px; 
+}
+.choose-level {
+  padding-top: 2%;
+}
+.level{
+  width: 25%;
+  font-size: 42px;
+  margin: 2% 8%;
+}
+
+.button{
+  margin:7% 6%;
+}
+.start-button {
+  cursor: pointer;
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #fff;
+  background: #D62B2E;
+  border-radius: 7px;
+  margin-left: 1px;
+  padding: 29px 83px 28px 82px;
+}
+
