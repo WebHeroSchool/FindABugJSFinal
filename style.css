@@ -8,12 +8,12 @@ body{
 .container {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  min-height: 100vh;
+  height: 100vh;
   font-weight: bold;
   background-image: url(./img/cardMenu2.png), url(./img/cardMenu.png);
-  background-position: 79% 91%, 63% 87%;
-  background-size: 24% 42%, 18% 40%;
   background-repeat: no-repeat ;
+  background-position-x: 79%, 63%;
+  background-position-y: 80%, 76%;
 }
 .header{
   padding: 5% 0% 0% 6%;
@@ -76,6 +76,7 @@ label{
 input{
   display: none
 }
+
 .card {
   position: relative;
   width: 218px;
