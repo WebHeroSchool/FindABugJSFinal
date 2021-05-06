@@ -1,15 +1,19 @@
 body{
-  background-image:  url(./img/cardMenu2.png), url(./img/cardMenu.png), url(./img/Background.png);
-  background-position:  79% 91%, 63% 87%, 100% 100%;
-  background-size: 24% 42%, 18% 40%, cover;
+  background-image: url(./img/Background.png);
+  background-position: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat ;
   height: 100vh;
 }
 .container {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   font-weight: bold;
+  background-image: url(./img/cardMenu2.png), url(./img/cardMenu.png);
+  background-position: 79% 91%, 63% 87%;
+  background-size: 24% 42%, 18% 40%;
+  background-repeat: no-repeat ;
 }
 .header{
   padding: 5% 0% 0% 6%;
@@ -24,6 +28,22 @@ body{
 .header__subtitle {
   font-size: 19px;
   line-height: 22px; 
+}
+
+input:checked ~ label::after {
+  content: ' ';
+  transform: rotate(45deg);
+  position: absolute;
+  display: block;
+  left: -30px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #D62B2E;
+}
+
+.hidden {
+  display: none;
 }
 .choose-level {
   padding-top: 2%;
@@ -49,28 +69,58 @@ body{
   padding: 29px 83px 28px 82px;
 }
 
-.level_simple, .level_middle, .level_hard {
-  padding: 0px;
-  visibility: hidden;
+label{
+  margin-left: 20px;
+  position: relative;
 }
-
-.filed {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+input{
+  display: none
 }
-
-/* класс создан в JS для обратной стороны карты*/
 .card {
-  background: url('./img/cardBack.png');
-  width: 50px;
-  height: 70px;
-  margin-right: 24px;
-  margin-bottom: 24px;
+  position: relative;
+  width: 218px;
+  height: 341px;
+  margin: 12px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
+
+.field {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 
 .card:hover {
   cursor: pointer;
   transition: transform 1s;
   transform: translateY(-15px) rotate(-5deg);
+}
+
+.easy-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+}
+.middle-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.hard-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
 }
