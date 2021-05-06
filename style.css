@@ -3,20 +3,22 @@ body{
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat ;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
 }
 .container {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   font-weight: bold;
   background-image: url(./img/cardMenu2.png), url(./img/cardMenu.png);
   background-repeat: no-repeat ;
-  background-position-x: 79%, 63%;
-  background-position-y: 80%, 76%;
+  background-position-x: 74%, 61%;
+  background-position-y: 95%, 90%;
 }
 .header{
-  padding: 5% 0% 0% 6%;
+  padding: 5% 0% 0% 5%;
 }
 
 .header__title {
@@ -33,7 +35,7 @@ body{
 input:checked ~ label::after {
   content: ' ';
   transform: rotate(45deg);
-  position: absolute;
+  position: absolute; 
   display: block;
   left: -30px;
   top: 10px;
@@ -46,7 +48,8 @@ input:checked ~ label::after {
   display: none;
 }
 .choose-level {
-  padding-top: 2%;
+  padding: 2%;
+  
 }
 .level{
   width: 25%;
@@ -79,24 +82,16 @@ input{
 
 .card {
   position: relative;
-  width: 218px;
-  height: 341px;
+ /* width: 90%;
+  height: 90%;*/
   margin: 12px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .field {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-height: 100vh;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -107,21 +102,21 @@ input{
 }
 
 .easy-game {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
+  display: flex;
+  height: 100vh;
 }
 .middle-game {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  display: flex;
+  flex-wrap:wrap;
+  width: 39%;
+  margin: 0 auto;
+  height: auto;
 }
 
 .hard-game {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  display: flex;
+  flex-wrap:wrap;
+  width: 65%;
+  margin: 0 auto;
+  height: auto;
 }
