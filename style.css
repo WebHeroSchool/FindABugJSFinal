@@ -125,69 +125,69 @@ input {
 }
 
 @media (max-width: 1366px) {
-.container {
-  background-position-x: 90%, 75%;
+  .container {
+    background-position-x: 90%, 75%;
   }
 
-.easy-game {
-  height: auto;
+  .easy-game {
+    height: auto;
   }
 
-.middle-game {
-  width: 58%;
+  .middle-game {
+    width: 58%;
   }
 
-.hard-game {
-  width: 95%;
+  .hard-game {
+    width: 95%;
   }
 }
 
 @media (max-width: 1280px) {
-.container {
-  background-position-y: 64%, 59%;
+  .container {
+    background-position-y: 64%, 59%;
   }
 
-.choose-level {
-  padding-top: 4%;
-   }
+  .choose-level {
+    padding-top: 4%;
+  }
 
-.hard-game {
-   width: 100%;
+  .hard-game {
+    width: 100%;
   }
 }
 
 @media (max-width: 800px) {
-.header__title {
-  font-size: 46px;
+  .header__title {
+    font-size: 46px;
   }
 
-.header__subtitle {
-  font-size: 14px;
+  .header__subtitle {
+    font-size: 14px;
   }
 
-.level {
-  font-size: 36px;
+  .level {
+    font-size: 36px;
   }
 
-.start-button {
-  font-size: 28px;
-  padding: 16px 40px 16px 32px;
+  .start-button {
+    font-size: 28px;
+    padding: 16px 40px 16px 32px;
   }
 
-.container {
-  background-position-y: 90%, 78%;
-  background-position-x: 93%, 70%;
+  .container {
+    background-position-y: 90%, 78%;
+    background-position-x: 93%, 70%;
   }
 
-.easy-game {
-  width: 95%;
+  .easy-game {
+    width: 95%;
   }
 
-.middle-game {
-  width: 96%;
+  .middle-game {
+    width: 96%;
   }
 
-.hard-game {
-  width: 62%;
+  .hard-game {
+    width: 62%;
   }
 }

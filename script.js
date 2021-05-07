@@ -33,7 +33,7 @@ class Card {
         "click",
         (e) => e.target.src = "./img/gameOver.png"
         ); 
-      };
+      }
     fieldCards.append(card);
   };
 
