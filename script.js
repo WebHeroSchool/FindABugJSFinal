@@ -35,7 +35,7 @@ class Card {
         ); 
       }
     fieldCards.append(card);
-  };
+  }
 
   generateCards(cards, lvl) {
     bugCard = Math.floor(Math.random() * cards);
