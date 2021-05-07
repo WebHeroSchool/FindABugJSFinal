@@ -1,4 +1,4 @@
- body {
+body {
   background-image: url(./img/Background.png);
   background-position: 100% 100%;
   background-size: cover;
@@ -14,7 +14,7 @@
   min-height: 100vh;
   font-weight: bold;
   background-image: url(./img/cardMenu2.png), url(./img/cardMenu.png);
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   background-position-x: 74%, 61%;
   background-position-y: 95%, 90%;
 }
@@ -54,7 +54,7 @@ input:checked ~ label::after {
   padding: 2%;
 }
 
-.level{
+.level {
   width: 25%;
   font-size: 42px;
   margin: 2% 8%;
@@ -76,12 +76,12 @@ input:checked ~ label::after {
   padding: 29px 83px 28px 82px;
 }
 
-label{
+label {
   margin-left: 20px;
   position: relative;
 }
 
-input{
+input {
   display: none;
 }
 
@@ -125,20 +125,20 @@ input{
 }
 
 @media (max-width: 1366px) {
-
-  .container {
+  
+.container {
     background-position-x: 90%, 75%;
   }
 
-  .easy-game {
+.easy-game {
     height: auto;
   }
 
-  .middle-game {
+.middle-game {
     width: 58%;
   }
 
-  .hard-game {
+.hard-game {
     width: 95%;
   }
 }
@@ -147,53 +147,50 @@ input{
 
   .container {
     background-position-y: 64%, 59%;
-    }
+      }
 
   .choose-level {
     padding-top: 4%;
-    }
+      }
 
     .hard-game {
       width: 100%;
-    }
+      }
 }
 
-@media (max-width: 800px)  {
+@media (max-width: 800px) {
 
-  .header__title {
+.header__title {
     font-size: 46px;
     }
 
-  .header__subtitle {
+.header__subtitle {
     font-size: 14px;
     }
 
-  .level {
-      font-size: 36px;
+.level {
+    font-size: 36px;
     }
 
-  .start-button {
-      font-size: 28px;
-      padding: 16px 40px 16px 32px;
+.start-button {
+    font-size: 28px;
+    padding: 16px 40px 16px 32px;
     }
 
-  .container {
-      background-position-y: 90%, 78%;
-      background-position-x: 93%, 70%;
+.container {
+    background-position-y: 90%, 78%;
+    background-position-x: 93%, 70%;
     }
 
-  .easy-game {
-      width: 95%;
+.easy-game {
+    width: 95%;
     }
 
-  .middle-game {
-      width: 96%;
+.middle-game {
+    width: 96%;
     }
 
-  .hard-game {
-      width: 62%;
+.hard-game {
+    width: 62%;
     }
-    
   }
-
- 
