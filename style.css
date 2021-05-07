@@ -107,21 +107,18 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
 }
 
 .middle-game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
 }
 
 .hard-game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
 }
 
 @media (max-width: 1366px) {
@@ -206,5 +203,4 @@ input {
     width: 90%;
     height: 100%;
   }
-
 }
