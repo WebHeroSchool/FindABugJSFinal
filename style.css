@@ -1,12 +1,13 @@
-body{
+ body {
   background-image: url(./img/Background.png);
   background-position: 100% 100%;
   background-size: cover;
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
   width: 100%;
 }
+
 .container {
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -17,7 +18,8 @@ body{
   background-position-x: 74%, 61%;
   background-position-y: 95%, 90%;
 }
-.header{
+
+.header {
   padding: 5% 0% 0% 5%;
 }
 
@@ -29,44 +31,46 @@ body{
 
 .header__subtitle {
   font-size: 19px;
-  line-height: 22px; 
+  line-height: 22px;
 }
 
 input:checked ~ label::after {
   content: ' ';
   transform: rotate(45deg);
-  position: absolute; 
+  position: absolute;
   display: block;
   left: -30px;
   top: 10px;
   width: 20px;
   height: 20px;
-  background-color: #D62B2E;
+  background-color: #d62b2e;
 }
 
 .hidden {
   display: none;
 }
+
 .choose-level {
   padding: 2%;
-  
 }
+
 .level{
   width: 25%;
   font-size: 42px;
   margin: 2% 8%;
 }
 
-.button{
-  margin:7% 6%;
+.button {
+  margin: 7% 6%;
 }
+
 .start-button {
   cursor: pointer;
   font-size: 31px;
   line-height: 37px;
   font-weight: bold;
   color: #fff;
-  background: #D62B2E;
+  background: #d62b2e;
   border-radius: 7px;
   margin-left: 1px;
   padding: 29px 83px 28px 82px;
@@ -76,8 +80,9 @@ label{
   margin-left: 20px;
   position: relative;
 }
+
 input{
-  display: none
+  display: none;
 }
 
 .card {
@@ -92,7 +97,6 @@ input{
   align-items: center;
 }
 
-
 .card:hover {
   cursor: pointer;
   transition: transform 1s;
@@ -103,9 +107,10 @@ input{
   display: flex;
   height: 100vh;
 }
+
 .middle-game {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 39%;
   margin: 0 auto;
   height: auto;
@@ -113,40 +118,48 @@ input{
 
 .hard-game {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 65%;
   margin: 0 auto;
   height: auto;
 }
 
-@media (max-width:1366px)  {
+@media (max-width: 1366px) {
+
   .container {
     background-position-x: 90%, 75%;
   }
+
   .easy-game {
     height: auto;
   }
+
   .middle-game {
     width: 58%;
   }
+
   .hard-game {
     width: 95%;
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width: 1280px) {
+
   .container {
     background-position-y: 64%, 59%;
     }
+
   .choose-level {
     padding-top: 4%;
     }
+
     .hard-game {
       width: 100%;
     }
 }
 
-@media (max-width:800px)  {
+@media (max-width: 800px)  {
+
   .header__title {
     font-size: 46px;
     }
@@ -155,26 +168,32 @@ input{
     font-size: 14px;
     }
 
-    .level {
+  .level {
       font-size: 36px;
     }
-    .start-button {
+
+  .start-button {
       font-size: 28px;
       padding: 16px 40px 16px 32px;
     }
-    .container {
+
+  .container {
       background-position-y: 90%, 78%;
       background-position-x: 93%, 70%;
     }
-    .easy-game {
+
+  .easy-game {
       width: 95%;
     }
-    .middle-game {
+
+  .middle-game {
       width: 96%;
     }
-    .hard-game {
+
+  .hard-game {
       width: 62%;
     }
+    
   }
 
  
