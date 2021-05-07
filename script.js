@@ -47,7 +47,7 @@ class Card {
       }
     }
     fieldCards.className = `game ${lvl}`;
-  };
+  }
 
   renderCards(level) {
     switch (level) {
@@ -63,8 +63,8 @@ class Card {
         this.generateCards(10, "hard-game");
         break;
     }
-  };
-};
+  }
+}
 
 const cards = new Card();
 
@@ -73,7 +73,7 @@ const goMenu = function () {
   fieldCards.className = "";
   document.body.classList.remove("field");
   container.classList.remove("hidden");
-};
+}
 
 const selectedLevel = (selectedLevel) =>  {
   if (selectedLevel === 1) {
@@ -90,7 +90,7 @@ const selectedLevel = (selectedLevel) =>  {
     middleButton.classList.remove("selected");
   }
  level = selectedLevel;
-};
+}
 
 easyButton.addEventListener("click", () => selectedLevel(1));
 middleButton.addEventListener("click", () => selectedLevel(2));
@@ -110,5 +110,5 @@ button.addEventListener("click", () => {
         fieldCards.addEventListener("click", goMenu, {once: true});
       }, 300);
     });
-  };
+  }
 });
