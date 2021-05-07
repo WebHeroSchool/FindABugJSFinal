@@ -204,3 +204,14 @@ input {
     height: 100%;
   }
 }
+
+@media (max-width: 520px) {
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+
+  .field {
+    margin: 2%;
+  }
+}
