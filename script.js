@@ -44,7 +44,7 @@ class Card {
         this.renderCard(true);
       } else {
         this.renderCard(false);
-      };
+      }
     }
     fieldCards.className = `game ${lvl}`;
   };
