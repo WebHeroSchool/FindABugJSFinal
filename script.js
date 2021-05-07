@@ -19,7 +19,7 @@ class Card {
     card.classList.add("card");
     if (isBug) {
       card.innerHTML = `
-        <img class="card__front" src="./img/cardBack.png">
+      <img class="card__front" src="./img/cardBack.png">
       `;
       card.addEventListener (
         "click",

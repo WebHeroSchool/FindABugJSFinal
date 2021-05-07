@@ -104,41 +104,29 @@ input {
 }
 
 .easy-game {
-  display: flex;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
 }
 
 .middle-game {
-  display: flex;
-  flex-wrap: wrap;
-  width: 39%;
-  margin: 0 auto;
-  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
 }
 
 .hard-game {
-  display: flex;
-  flex-wrap: wrap;
-  width: 65%;
-  margin: 0 auto;
-  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
 }
 
 @media (max-width: 1366px) {
   .container {
     background-position-x: 90%, 75%;
-  }
-
-  .easy-game {
-    height: auto;
-  }
-
-  .middle-game {
-    width: 58%;
-  }
-
-  .hard-game {
-    width: 95%;
   }
 }
 
@@ -149,10 +137,6 @@ input {
 
   .choose-level {
     padding-top: 4%;
-  }
-
-  .hard-game {
-    width: 100%;
   }
 }
 
@@ -177,18 +161,6 @@ input {
   .container {
     background-position-y: 90%, 78%;
     background-position-x: 93%, 70%;
-  }
-
-  .easy-game {
-    width: 95%;
-  }
-
-  .middle-game {
-    width: 96%;
-  }
-
-  .hard-game {
-    width: 62%;
   }
 }
 
@@ -229,4 +201,10 @@ input {
   .button {
     margin: 15% 0 0 0;
   }
+  
+  .card__front {
+    width: 90%;
+    height: 100%;
+  }
+
 }
