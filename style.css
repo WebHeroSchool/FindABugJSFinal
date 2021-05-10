@@ -193,18 +193,12 @@ input {
 
   .level {
     text-align: center;
-    margin: 2% 28%;
+    margin: 4% 32%;
   }
 
   .card__front {
     width: 80%;
     height: 90%;
-  }
-
-  .level {
-    font-size: 36px;
-    text-align: center;
-    margin: 4% 32%;
   }
 
   .start-button {
@@ -270,7 +264,7 @@ input {
   .button {
     margin: 15% 0 0 0;
   }
-  
+
   .card__front {
     width: 90%;
     height: 100%;
