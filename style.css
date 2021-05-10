@@ -137,6 +137,13 @@ input {
   }
 }
 
+@media (max-width: 1096px) {
+  .card__front {
+    width: 90%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   .header__title {
     font-size: 46px;
@@ -158,6 +165,71 @@ input {
   .container {
     background-position-y: 90%, 78%;
     background-position-x: 93%, 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-image: none;
+    text-align: center;
+  }
+
+  .level {
+    text-align: center;
+    margin: 2% 35%;
+  }
+
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .container {
+    background-image: none;
+    text-align: center;
+  }
+
+  .level {
+    text-align: center;
+    margin: 2% 28%;
+  }
+
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+
+  .level {
+    font-size: 36px;
+    text-align: center;
+    margin: 4% 32%;
+  }
+
+  .start-button {
+    font-size: 31px;
+    padding: 29px 83px 28px 82px;
+    margin: 3% 4%;
+  }
+
+  .button {
+    margin: 15% 0 0 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .card__front {
+    width: 80%;
+    height: 90%;
+  }
+
+  .field {
+    margin: 0%;
+  }
+
+  body {
+    width: 100%;
   }
 }
 
@@ -202,16 +274,5 @@ input {
   .card__front {
     width: 90%;
     height: 100%;
-  }
-}
-
-@media (max-width: 520px) {
-  .card__front {
-    width: 80%;
-    height: 90%;
-  }
-
-  .field {
-    margin: 2%;
   }
 }
